@@ -54,7 +54,7 @@
 }
 
 .header__optionBasket {
-  color: white;
+  color: white !important;
   display: flex;
 }
 .header__basketCount {
