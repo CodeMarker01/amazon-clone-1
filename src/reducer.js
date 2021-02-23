@@ -6,6 +6,10 @@ export const initialState = {
   basket: [],
 };
 
+//Selector
+export const getBasketTotal = (basket) =>
+  basket?.reduce((amount, item) => amount + item.price, 0);
+
 /**
  * action: tượng trưng cho update, add, remove basket
  * khi nhấn nút 'add to basket' tại action.type sẽ nhận được case ADD_TO_BASKET và thực hiện lệnh
