@@ -6,7 +6,7 @@ function Product({ id, title, price, rating, image }) {
   // State
   // Lấy dữ liệu từ data layer
   const [{ basket }, dispatch] = useStateValue();
-  console.log("this is the basket:", basket);
+  // console.log("this is the basket:", basket);
   // Event
   const addToBasket = () => {
     // console.log(state);

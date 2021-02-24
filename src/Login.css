@@ -28,7 +28,7 @@
   flex-direction: column;
 }
 
-.login__container form h1 {
+.login__container h1 {
   font-weight: 500;
   margin-bottom: 20px;
 }

@@ -4,6 +4,7 @@
  */
 export const initialState = {
   basket: [],
+  user: null,
 };
 
 //Selector
@@ -16,7 +17,7 @@ export const getBasketTotal = (basket) =>
  * reducer sẽ luôn luôn lắng nghe và dispatch (cử đi) thực hiện 1 hành động (action) nào đó
  */
 const reducer = (state, action) => {
-  // console.log(action);
+  console.log(action);
   switch (action.type) {
     case "ADD_TO_BASKET":
       return {
@@ -41,6 +42,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         basket: newBasket,
+      };
+
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
       };
 
     default:
